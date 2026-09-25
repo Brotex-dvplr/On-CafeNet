@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>on-cafenet | فروشگاه خدمات دیجیتال</title>
+<style>
+:root{--bg:#0b1020;--card:#151d35;--card2:#1d2947;--text:#f7f9ff;--muted:#aab6d3;--primary:#7c5cff;--secondary:#00d4ff;--success:#20d39b}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#080d1a,#111a35 55%,#211546);color:var(--text);line-height:1.8}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,13,26,.88);backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:20px}.logo{font-size:1.45rem;font-weight:900;letter-spacing:.5px}.logo span{color:var(--secondary)}
+.nav a{color:var(--muted);margin-right:18px;font-size:.92rem}.btn{display:inline-block;border:0;border-radius:14px;padding:11px 18px;background:linear-gradient(90deg,var(--primary),#a855f7);color:#fff;font-weight:bold;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.hero{padding:80px 0 55px;text-align:center}.tag{display:inline-block;padding:5px 13px;border:1px solid #ffffff20;border-radius:99px;color:#b9b1ff;background:#ffffff09;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,4.2rem);line-height:1.3;margin:18px 0;background:linear-gradient(90deg,#fff,#a9dfff,#b7a5ff);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:700px;margin:0 auto 26px;color:var(--muted);font-size:1.05rem}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.outline{background:transparent;border:1px solid #ffffff2b}
+.section{padding:45px 0}.section-title{text-align:center;margin-bottom:30px}.section-title h2{font-size:2rem;margin:0 0 8px}.section-title p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:linear-gradient(180deg,#18223d,#121a2f);border:1px solid #ffffff12;border-radius:22px;padding:23px;display:flex;flex-direction:column;box-shadow:0 12px 35px #0002}.icon{font-size:2.5rem;margin-bottom:10px}.card h3{margin:0 0 8px;font-size:1.1rem}.card p{color:var(--muted);font-size:.9rem;flex:1}.price{font-size:1rem;color:#b9c9ff;margin:12px 0}.card .btn{width:100%;text-align:center}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#ffffff08;border:1px solid #ffffff12;border-radius:18px;padding:20px}.feature strong{display:block;margin-bottom:5px}.feature span{color:var(--muted);font-size:.9rem}
+.order-box{background:linear-gradient(135deg,#1c2850,#261b4b);border:1px solid #ffffff18;border-radius:26px;padding:30px;max-width:780px;margin:auto}
+form{display:grid;gap:14px}label{font-size:.9rem;color:#d8def0}input,select,textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #ffffff1d;background:#0c1428;color:#fff;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--secondary)}textarea{min-height:110px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.notice{background:#00d4ff12;border:1px solid #00d4ff35;color:#bcefff;border-radius:12px;padding:12px;font-size:.85rem}
+footer{margin-top:50px;padding:28px 0;border-top:1px solid #ffffff12;color:var(--muted);text-align:center;font-size:.9rem}
+.toast{display:none;padding:12px;border-radius:12px;background:#20d39b18;border:1px solid #20d39b55;color:#9effdc}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.nav nav{display:none}.hero{padding-top:55px}.grid,.features,.row{grid-template-columns:1fr}.card{padding:20px}.section{padding:32px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">on-<span>cafenet</span></a>
+    <nav><a href="#services">خدمات</a><a href="#order">ثبت سفارش</a><a href="#about">درباره ما</a></nav>
+    <a class="btn" href="#order">شروع سفارش</a>
+  </div>
+</header>
+
+<main>
+<section class="hero container" id="home">
+  <span class="tag">خدمات دیجیتال • خلاقیت • هوش مصنوعی</span>
+  <h1>ایده‌ات را به یک<br>تجربه دیجیتال تبدیل کن</h1>
+  <p>در on-cafenet، طراحی سایت، اپلیکیشن، هویت بصری و ویدیوهای تبلیغاتی هوش مصنوعی را با رویکردی حرفه‌ای و خلاقانه دریافت کنید.</p>
+  <div class="actions"><a class="btn" href="#services">مشاهده خدمات</a><a class="btn outline" href="#order">ثبت سفارش اختصاصی</a></div>
+</section>
+
+<section class="section container" id="services">
+  <div class="section-title"><h2>خدمات فروشگاه</h2><p>خدمت موردنظرت را انتخاب کن و سفارش خود را ثبت کن.</p></div>
+  <div class="grid">
+    <article class="card"><div class="icon">🌐</div><h3>طراحی سایت</h3><p>ساخت سایت مدرن، سریع، واکنش‌گرا و مناسب کسب‌وکار شما.</p><div class="price">قیمت: توافقی</div><button class="btn" onclick="chooseService('طراحی سایت')">سفارش این خدمت</button></article>
+    <article class="card"><div class="icon">📱</div><h3>طراحی اپلیکیشن</h3><p>طراحی تجربه کاربری و رابط کاربری اپلیکیشن‌های موبایل و وب.</p><div class="price">قیمت: توافقی</div><button class="btn" onclick="chooseService('طراحی اپلیکیشن')">سفارش این خدمت</button></article>
+    <article class="card"><div class="icon">🎨</div><h3>لوگو و گرافیک</h3><p>طراحی لوگو، پوستر، بنر، هویت بصری و محتوای گرافیکی.</p><div class="price">قیمت: توافقی</div><button class="btn" onclick="chooseService('ساخت لوگو و طراحی گرافیکی')">سفارش این خدمت</button></article>
+    <article class="card"><div class="icon">🤖</div><h3>ویدیوی تبلیغاتی AI</h3><p>ساخت ویدیوهای تبلیغاتی جذاب و خلاقانه با هوش مصنوعی.</p><div class="price">قیمت: توافقی</div><button class="btn" onclick="chooseService('ساخت ویدیو تبلیغاتی با هوش مصنوعی')">سفارش این خدمت</button></article>
+  </div>
+</section>
+
+<section class="section container" id="about">
+  <div class="section-title"><h2>چرا on-cafenet؟</h2><p>یک مسیر ساده از ایده تا اجرای پروژه.</p></div>
+  <div class="features">
+    <div class="feature"><strong>⚡ اجرای خلاقانه</strong><span>راهکارهای متناسب با هدف و هویت برند شما.</span></div>
+    <div class="feature"><strong>💬 ارتباط مستقیم</strong><span>پیگیری جزئیات سفارش از طریق بله.</span></div>
+    <div class="feature"><strong>🛠️ سفارش اختصاصی</strong><span>امکان توضیح نیازمندی‌ها و دریافت برآورد قیمت.</span></div>
+  </div>
+</section>
+
+<section class="section container" id="order">
+  <div class="section-title"><h2>ثبت سفارش</h2><p>فرم زیر را تکمیل کنید تا اطلاعات سفارش آماده شود.</p></div>
+  <div class="order-box">
+    <form id="orderForm">
+      <div class="row">
+        <div><label for="name">نام و نام خانوادگی *</label><input id="name" required placeholder="نام شما"></div>
+        <div><label for="phone">شماره تماس *</label><input id="phone" required type="tel" placeholder="09xxxxxxxxx"></div>
+      </div>
+      <div><label for="service">نوع خدمت *</label><select id="service" required><option value="">انتخاب کنید</option><option>طراحی سایت</option><option>طراحی اپلیکیشن</option><option>ساخت لوگو و طراحی گرافیکی</option><option>ساخت ویدیو تبلیغاتی با هوش مصنوعی</option></select></div>
+      <div><label for="budget">بودجه تقریبی</label><select id="budget"><option>هنوز مشخص نیست</option><option>کمتر از ۵ میلیون تومان</option><option>۵ تا ۱۵ میلیون تومان</option><option>۱۵ تا ۳۰ میلیون تومان</option><option>بیشتر از ۳۰ میلیون تومان</option></select></div>
+      <div><label for="details">توضیحات پروژه *</label><textarea id="details" required placeholder="جزئیات پروژه، سبک موردنظر، زمان تحویل و..."></textarea></div>
+      <div class="notice">پس از ثبت فرم، برای ادامه هماهنگی و پرداخت به صفحه بله هدایت می‌شوید. تأیید خودکار پرداخت در این نسخه فعال نیست.</div>
+      <button class="btn" type="submit">ثبت اطلاعات و ادامه در بله</button>
+      <div class="toast" id="toast"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">© <span id="year"></span> on-cafenet — تمامی حقوق محفوظ است.</div></footer>
+
+<script>
+const baleUrl = 'https://ble.ir/on_cafenet';
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function chooseService(service){
+  document.getElementById('service').value = service;
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const data = {
+    name: document.getElementById('name').value.trim(),
+    phone: document.getElementById('phone').value.trim(),
+    service: document.getElementById('service').value,
+    budget: document.getElementById('budget').value,
+    details: document.getElementById('details').value.trim()
+  };
+  const message = `سلام، برای ثبت سفارش در on-cafenet پیام می‌دهم.%0Aنام: ${encodeURIComponent(data.name)}%0Aشماره تماس: ${encodeURIComponent(data.phone)}%0Aخدمت: ${encodeURIComponent(data.service)}%0Aبودجه: ${encodeURIComponent(data.budget)}%0Aتوضیحات: ${encodeURIComponent(data.details)}`;
+  const toast = document.getElementById('toast');
+  toast.style.display = 'block';
+  toast.textContent = 'اطلاعات آماده شد. در حال انتقال به بله...';
+  // پیام در URL به‌صورت تضمینی توسط همه نسخه‌های بله پر نمی‌شود؛
+  // بنابراین لینک اصلی بله باز می‌شود.
+  setTimeout(() => { window.open(baleUrl, '_blank'); }, 450);
+});
+</script>
+</body>
+</html>
