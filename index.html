@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On-CafeNet | استودیو دیجیتال</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#070b18;--panel:#111a31;--text:#f7f8ff;--muted:#a5b1ce;--purple:#8b5cf6;--cyan:#22d3ee;--line:#ffffff18}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#29215b,transparent 32%),radial-gradient(circle at 0 45%,#07364b,transparent 25%),var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#070b18e8;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.35rem;font-weight:900;letter-spacing:-1px}.brand img{width:48px;height:48px;object-fit:contain;border-radius:13px}.brand b{color:var(--cyan)}
+.links{display:flex;align-items:center;gap:24px}.links a{color:#c5cde1;font-size:.88rem}.links a:hover{color:#fff}.shop{border:1px solid #ffffff24;border-radius:12px;padding:8px 13px;background:#ffffff08}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;padding:95px 0 75px}.eyebrow{display:inline-block;color:#c4b5fd;background:#8b5cf618;border:1px solid #8b5cf650;border-radius:99px;padding:4px 13px;font-size:.8rem}
+h1{font-size:clamp(2.3rem,5vw,4.7rem);line-height:1.3;letter-spacing:-2px;margin:18px 0;background:linear-gradient(110deg,#fff,#c4b5fd,#67e8f9);-webkit-background-clip:text;color:transparent}h2{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.4;margin:0 0 10px}.lead{color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:13px;padding:11px 19px;background:linear-gradient(100deg,var(--purple),#6366f1);color:white;font:inherit;font-weight:800;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-3px)}.ghost{background:#ffffff08;border:1px solid var(--line)}
+.visual{min-height:390px;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,#202652,#10172b);box-shadow:0 25px 90px #0005}.orb{position:absolute;inset:45px;border:1px solid #ffffff20;border-radius:25px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#ffffff06;text-align:center}.orb strong{font-size:4rem}.orb h3{font-size:1.4rem;margin:8px}.orb p{color:var(--muted);margin:0}.float{position:absolute;background:#10182de8;border:1px solid #ffffff22;border-radius:15px;padding:10px 14px;font-size:.8rem}.f1{top:25px;left:20px}.f2{bottom:25px;right:20px;color:#a7f3d0}
+.section{padding:70px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 32px}.section-head p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:linear-gradient(145deg,#16213c,#0e1528);border:1px solid var(--line);border-radius:22px;padding:22px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#8b5cf655}.icon{font-size:2rem}.card h3{margin:8px 0}.card p{color:var(--muted);font-size:.86rem}.service-link{color:#a5b4fc;font-size:.8rem}
+.work-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px}.work{min-height:190px;border:1px solid var(--line);border-radius:23px;padding:24px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;background:linear-gradient(135deg,#6d28d9,#0891b2)}.work:nth-child(2){background:linear-gradient(135deg,#be185d,#7c3aed)}.work:nth-child(3){background:linear-gradient(135deg,#0369a1,#0f766e)}.work:first-child{grid-row:span 2;min-height:390px}.work h3,.work p{position:relative;margin:0}.work p{font-size:.8rem;color:#e1e7ff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{display:flex;gap:13px}.number{flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#8b5cf622;border:1px solid #8b5cf655;color:#c4b5fd;font-weight:900}.step h3{margin:0}.step p{margin:0;color:var(--muted);font-size:.85rem}
+.cta{border:1px solid #8b5cf655;border-radius:28px;padding:40px;background:linear-gradient(110deg,#211b4c,#102e46);display:flex;align-items:center;justify-content:space-between;gap:25px}.cta p{color:var(--muted);max-width:600px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:1fr 1fr}.work:first-child{grid-row:auto;min-height:250px}.steps{grid-template-columns:1fr}}
+@media(max-width:560px){.links a:not(.shop){display:none}.hero{padding:60px 0}.grid,.work-grid{grid-template-columns:1fr}.visual{min-height:320px}.cta{display:block;padding:28px}.cta .btn{margin-top:18px}.foot{display:block}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="index.html"><img src="logo.png" alt="لوگوی On-CafeNet"><span>On-<b>CafeNet</b></span></a>
+<nav class="links"><a href="#services">خدمات</a><a href="#portfolio">نمونه‌کارها</a><a href="#process">روند همکاری</a><a class="shop" href="shop.html">فروشگاه 🛒</a></nav>
+</div></header>
+<main>
+<section class="hero wrap"><div><span class="eyebrow">✦ استودیو خلاقیت و فناوری</span><h1>برندت را به دنیای دیجیتال وارد کن.</h1><p class="lead">از طراحی سایت و اپلیکیشن تا هویت بصری و ویدیوهای تبلیغاتی با هوش مصنوعی؛ همه‌چیز برای ساخت یک حضور دیجیتال متفاوت در On-CafeNet.</p><div class="actions"><a class="btn" href="#services">کشف خدمات ←</a><a class="btn ghost" href="#contact">شروع پروژه</a></div></div>
+<div class="visual"><div class="float f1">✦ ایده‌های بزرگ، اجرای دقیق</div><div class="orb"><strong>✦</strong><h3>Creative Digital Lab</h3><p>Design • Code • AI</p></div><div class="float f2">✓ آماده برای ساخت آینده</div></div></section>
+<section class="section wrap" id="services"><div class="section-head"><h2>هر چیزی برای رشد دیجیتال</h2><p>خدمات حرفه‌ای برای معرفی بهتر و رشد کسب‌وکار شما.</p></div><div class="grid">
+<article class="card"><div class="icon">🌐</div><h3>طراحی سایت</h3><p>سایت‌های سریع، واکنش‌گرا و مدرن برای معرفی برند و جذب مشتری.</p><a class="service-link" href="shop.html">مشاهده در فروشگاه ↗</a></article>
+<article class="card"><div class="icon">📱</div><h3>طراحی اپلیکیشن</h3><p>طراحی رابط و تجربه کاربری جذاب برای اپلیکیشن‌های موبایل و وب.</p><a class="service-link" href="shop.html">مشاهده در فروشگاه ↗</a></article>
+<article class="card"><div class="icon">🎨</div><h3>لوگو و گرافیک</h3><p>هویت بصری، لوگو، پوستر، بنر و محتوای گرافیکی حرفه‌ای.</p><a class="service-link" href="shop.html">مشاهده در فروشگاه ↗</a></article>
+<article class="card"><div class="icon">🤖</div><h3>ویدیوی تبلیغاتی AI</h3><p>ویدیوهای خلاقانه تبلیغاتی با کمک ابزارهای هوش مصنوعی.</p><a class="service-link" href="shop.html">مشاهده در فروشگاه ↗</a></article>
+</div></section>
+<section class="section wrap" id="portfolio"><div class="section-head"><h2>ایده‌ها را به تصویر بکش</h2><p>زمینه‌هایی که می‌توانیم برای شما تجربه‌ای متمایز خلق کنیم.</p></div><div class="work-grid"><div class="work"><h3>تجربه‌های وب مدرن</h3><p>Landing Page • Business Website</p></div><div class="work"><h3>هویت بصری برند</h3><p>Branding • Graphic Design</p></div><div class="work"><h3>محصولات موبایلی</h3><p>UI/UX • Mobile App</p></div></div></section>
+<section class="section wrap" id="process"><div class="section-head"><h2>روند همکاری ما</h2><p>ساده، شفاف و مرحله‌به‌مرحله.</p></div><div class="steps"><div class="step"><div class="number">۱</div><div><h3>شناخت نیاز</h3><p>ایده و اهداف پروژه شما را بررسی می‌کنیم.</p></div></div><div class="step"><div class="number">۲</div><div><h3>طراحی و اجرا</h3><p>راهکار مناسب را طراحی و پیاده‌سازی می‌کنیم.</p></div></div><div class="step"><div class="number">۳</div><div><h3>تحویل و پشتیبانی</h3><p>نتیجه را بررسی کرده و همراه شما هستیم.</p></div></div></div></section>
+<section class="section wrap" id="contact"><div class="cta"><div><h2>پروژه بعدی‌ات را شروع کنیم؟</h2><p>جزئیات ایده‌ات را با ما در میان بگذار و برای دریافت راهنمایی و برآورد اولیه ارتباط بگیر.</p></div><a class="btn" href="https://ble.ir/on_cafenet" target="_blank">ارتباط در بله ↗</a></div></section>
+</main><footer><div class="wrap foot"><span>© 2026 On-CafeNet</span><span>طراحی شده برای ایده‌های خلاقانه ✦</span></div></footer>
+</body></html>
